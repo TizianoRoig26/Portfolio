@@ -13,93 +13,98 @@
     
     <nav class="navbar">    
         <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Proyectos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><button class="btn-cv">CV</button></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#lenguajes">Lenguajes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button class="btn-cv" onclick="window.open('./docs/cv.pdf', '_blank', 'noopener')">CV</button></li>
         </ul>
     </nav>
+    <div class="btn-menu" id="btn-menu"><img src="./img/menu.svg" alt="menú Desplegable"></div>
 </section>
 </header>
     <main>
-        <section class="sobreMi">
+        <section class="sobreMi" id="inicio">
             <div class="descripcion">
-                <h1 class="titulo">Tiziano Roig</h1>
+                <h1 class="titulo" >Tiziano Roig</h1>
                 <br>
                 <div class="parrafo">
                     <p>Hola, soy Tiziano Roig, programador y creador de soluciones tecnológicas. Combino desarrollo web y automatización para transformar ideas en proyectos reales.</p>
                     <br>
-                    <p>Actualmente curso la Tecnicatura en Programación y tengo experiencia en desarrollo de sistemas, bases de datos SQL y automatización de procesos. Me apasiona aprender nuevas tecnologías y llevar proyectos desde la idea hasta la implementación.</p>
-                    <button class="btn-cv">CV</button>
+                    <p>Actualmente curso la Tecnicatura en Programación y tengo experiencia en desarrollo de sistemas, bases de datos y automatización de procesos. Me apasiona aprender nuevas tecnologías y llevar proyectos desde la idea hasta la implementación.</p>
+                    <button class="btn-cv" onclick="window.open('cv.pdf', '_blank', 'noopener')">CV</button>
                 </div>
             </div>
             <div class="foto&Link">
-                <img class="img" src="./img/OIP.png" alt="Foto de perfil">
+                <img class="img" src="./img/avatar.png" alt="Foto de perfil">
                 <section class="iconos">
+                <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="btn-redes">
                     <img src="./img/brand-linkedin.svg" alt="Linkedin">
+                </a>
+                <a href="https://github.com/tu-user" target="_blank" class="btn-redes">
                     <img src="./img/brand-github.svg" alt="GitHub">
-                </section>
+                </a>
+        </section>
             </div>
         </section>
         <hr>
-        <div class="proyectos">
+        <h2 class="tituloProyectos">Proyectos</h2>
+        <div class="proyectos animar"  id="proyectos">
             <article class="tarjeta1">
-                <img class="imgP" src="./img/OIP.png" alt="imgProyecto1">
+                <img class="imgP" src="./img/Captura de pantalla 2025-11-15 154107.png" alt="Proyecto-FoodStore">
                 <div class="nombreProyecto">
-                        <h2>Proyecto</h2>
+                        <h2>FoodStore</h2>
                     <div class="lenguajeIconos">
                         <div class="iconosArriba">
-                            <img src="./img/brand-javascript.svg" alt="Linkedin">
-                            <img src="./img/sql.svg" alt="GitHub">
+                            <img src="./img/brand-javascript.svg" alt="ts">
+                            <img src="./img/Postgresql--Streamline-Simple-Icons.svg" alt="postgres">
                         </div>
                         <div class="iconosAbajo">
-                            <img src="./img/file-type-html.svg" alt="Linkedin">
-                            <img src="./img/file-type-css.svg" alt="GitHub">
+                            <img src="./img/Java--Streamline-Font-Awesome.svg" alt="java">
+                            <img src="./img/file-type-html.svg" alt="html">
                         </div>
                     </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsa eius. Similique alias ipsum odit! Voluptas, minus. Quis, aliquam eligendi quasi vitae expedita accusam</p>
+                <p>Food Store es un sistema full-stack para gestión de pedidos de comida. Front en TypeScript + Vite y backend en Spring Boot. Implementé catálogo, carrito persistente, órdenes, panel admin y flujos completos de compra.</p>
             </article>
-            <article class="tarjeta2">
-                <img src="./img/OIP.png" alt="imgProyecto2">
+            <article class="tarjeta2 animar" >
+                <img src="./img/Captura de pantalla 2025-11-15 155039.png" alt="Proyecto-ORT">
                 <div class="nombreProyecto">
-                        <h2>Proyecto</h2>
+                        <h2>OR Transporte</h2>
                     <div class="lenguajeIconos">
                         <div class="iconosArriba">
-                            <img src="./img/Java--Streamline-Font-Awesome.svg" alt="Linkedin">
-                            <img src="./img/sql.svg" alt="GitHub">
+                            <img src="./img/brand-wordpress.svg" alt="brand-wordpress">
+                            <img src="./img/sql.svg" alt="sql">
                         </div>
                         <div class="iconosAbajo">
-                            <img src="./img/file-type-html.svg" alt="Linkedin">
-                            <img src="./img/file-type-css.svg" alt="GitHub">
+                            <img src="./img/brand-github.svg" alt="GitHub">
                         </div>
                     </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsa eius. Similique alias ipsum odit! Voluptas, minus. Quis, aliquam eligendi quasi vitae expedita accusam</p>
+                <p>Desarrollé la web de Oscar Roig Transporte con un enfoque moderno y funcional, integrando diseño responsive, optimización de carga y una estructura clara para mostrar servicios y flota.</p>
             </article>
-            <article class="tarjeta3">
-                <img src="./img/OIP.png" alt="imgProyecto3">
+            <article class="tarjeta3 animar" >
+                <img src="./img/sv.png" alt="Proyecto-Savage-Wine">
                 <div class="nombreProyecto">
-                        <h2>Proyecto</h2>
+                        <h2>Savage Wine</h2>
                     <div class="lenguajeIconos">
                         <div class="iconosArriba">
-                            <img src="./img/brand-python.svg" alt="Linkedin">
-                            <img src="./img/sql.svg" alt="GitHub">
+                            <img src="./img/brand-wordpress.svg" alt="brand-wordpress">
+                            <img src="./img/sql.svg" alt="sql">
                         </div>
                         <div class="iconosAbajo">
-                            <img src="./img/file-type-html.svg" alt="Linkedin">
-                            <img src="./img/file-type-css.svg" alt="GitHub">
+                            <img src="./img/brand-github.svg" alt="GitHub">
                         </div>
                     </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsa eius. Similique alias ipsum odit! Voluptas, minus. Quis, aliquam eligendi quasi vitae expedita accusam</p>
+                <p>Construí la web de Savage Wine enfocada en turismo premium, con diseño visual atractivo, navegación intuitiva y componentes dinámicos que destacan experiencias, rutas y servicios exclusivos.</p>
             </article>
         </div>
         <hr>
-        <section class="contenedorLenguajes">
-            <h2 class="tituloLenguaje">Lenguajes</h2>
-            <div class="lenguajes">
-                <div class="fila">
+        <section class="contenedorLenguajes animar"  id="lenguajes">
+            <h2 class="tituloLenguaje">Tecnologías</h2>
+            <div class="lenguajes" >
+                <div class="fila" >
                     <article class="tarjeta" id="css">
                         <img src="./img/file-type-css.svg" alt="CSS">
                         <h3>CSS</h3>
@@ -135,8 +140,8 @@
             </div>
         </section>
           <hr>
-        <div class="contacto">
-        <form action="" class="formulario">
+          <div class="contacto animar" id="contacto">
+            <form action="" class="formulario">
             <h2>Contacto</h2>
             <article class="input">
                 <label for="nombre">Nombre</label>
@@ -154,9 +159,16 @@
         </form>
         </div>
 
+        <div class="wsp" >
+            <a href="https://wa.me/5492612466616" target="_blank">
+                <img src="./img/brand-whatsapp (1).svg" width="50px" alt="WhatsApp">
+            </a>
+        </div>
+
     </main>
     <footer class="footer">
         <p>Tiziano Roig 2025 | Todos los derechos reservados</p>
     </footer>
 </body>
+    <script src="script.js"></script>
 </html>
